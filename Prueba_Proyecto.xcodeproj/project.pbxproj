@@ -20,6 +20,7 @@
 		FB5DA5B62CDD30E000E1E494 /* detalle_pais_controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5DA5B52CDD30E000E1E494 /* detalle_pais_controller.swift */; };
 		FB5DA5B82CDD312900E1E494 /* Lista_Horarios.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5DA5B72CDD312900E1E494 /* Lista_Horarios.swift */; };
 		FB5DA5BA2CDD316F00E1E494 /* DetallesHorarios.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5DA5B92CDD316F00E1E494 /* DetallesHorarios.swift */; };
+		FBCA96CE2CDE77FB001BF9B5 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCA96CD2CDE77FB001BF9B5 /* NavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		FB5DA5B52CDD30E000E1E494 /* detalle_pais_controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detalle_pais_controller.swift; sourceTree = "<group>"; };
 		FB5DA5B72CDD312900E1E494 /* Lista_Horarios.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lista_Horarios.swift; sourceTree = "<group>"; };
 		FB5DA5B92CDD316F00E1E494 /* DetallesHorarios.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallesHorarios.swift; sourceTree = "<group>"; };
+		FBCA96CD2CDE77FB001BF9B5 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 				FB5DA5B52CDD30E000E1E494 /* detalle_pais_controller.swift */,
 				FB5DA5B72CDD312900E1E494 /* Lista_Horarios.swift */,
 				FB5DA5B92CDD316F00E1E494 /* DetallesHorarios.swift */,
+				FBCA96CD2CDE77FB001BF9B5 /* NavigationController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB5DA5BA2CDD316F00E1E494 /* DetallesHorarios.swift in Sources */,
+				FBCA96CE2CDE77FB001BF9B5 /* NavigationController.swift in Sources */,
 				FB5DA5B82CDD312900E1E494 /* Lista_Horarios.swift in Sources */,
 				FB5DA5B42CDD2F9300E1E494 /* Lista_Paises_Controller.swift in Sources */,
 				FB5DA5B62CDD30E000E1E494 /* detalle_pais_controller.swift in Sources */,

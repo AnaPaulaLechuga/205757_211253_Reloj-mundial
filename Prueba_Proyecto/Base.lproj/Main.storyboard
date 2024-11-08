@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SYF-mh-wr6">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
@@ -11,8 +11,8 @@
         <!--Horarios-->
         <scene sceneID="9j0-7y-d8y">
             <objects>
-                <navigationController id="jBT-2l-0gH" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Horarios" id="xWu-kk-pW4"/>
+                <navigationController id="jBT-2l-0gH" customClass="NavigationController" customModule="Prueba_Proyecto" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" tag="5" title="Horarios" image="clock.fill" catalog="system" selectedImage="clock.fill" id="xWu-kk-pW4"/>
                     <navigationItem key="navigationItem" id="Dsm-um-mlf"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="wnv-VN-gXq">
@@ -20,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="yXL-a4-xgE" kind="show" id="AZk-TM-G46"/>
+                        <segue destination="yXL-a4-xgE" kind="relationship" relationship="rootViewController" id="3Uo-Yj-Spp"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hfz-9R-Fto" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -32,26 +32,46 @@
             <objects>
                 <viewController id="yXL-a4-xgE" customClass="HorariosController" customModule="Prueba_Proyecto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xe9-Du-Kbj">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iKX-Op-tvr">
-                                <rect key="frame" x="14" y="55" width="260" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="iKX-Op-tvr">
+                                <rect key="frame" x="14" y="80" width="363" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <outlet property="delegate" destination="bcP-3D-KmU" id="zbc-Ee-vGS"/>
                                 </connections>
                             </searchBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lBF-Je-ha0">
-                                <rect key="frame" x="285" y="60" width="92" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Cancelar"/>
-                            </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="xRV-qD-dFx">
+                                <rect key="frame" x="28" y="140" width="337" height="66"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="n9D-34-IXl">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <label key="backgroundView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre del país" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Etr-DJ-s8T">
+                                    <rect key="frame" x="0.0" y="0.0" width="337" height="66"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                    <color key="textColor" red="0.88875241620000001" green="0.88875241620000001" blue="0.88875241620000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <cells/>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4e7-am-V6D"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="iKX-Op-tvr" firstAttribute="leading" secondItem="Xe9-Du-Kbj" secondAttribute="leading" constant="14" id="URJ-zO-osT"/>
+                            <constraint firstItem="iKX-Op-tvr" firstAttribute="top" secondItem="Xe9-Du-Kbj" secondAttribute="top" constant="80" id="VlE-gA-KAU"/>
+                            <constraint firstItem="xRV-qD-dFx" firstAttribute="top" secondItem="iKX-Op-tvr" secondAttribute="bottom" constant="4" id="Y9m-s1-aZR"/>
+                            <constraint firstItem="xRV-qD-dFx" firstAttribute="leading" secondItem="4e7-am-V6D" secondAttribute="leading" constant="28" id="gAq-HG-sKU"/>
+                            <constraint firstItem="4e7-am-V6D" firstAttribute="bottom" secondItem="xRV-qD-dFx" secondAttribute="bottom" constant="563" id="gLZ-zB-2v5"/>
+                            <constraint firstItem="iKX-Op-tvr" firstAttribute="trailing" secondItem="Xe9-Du-Kbj" secondAttribute="trailingMargin" id="kai-2o-42C"/>
+                            <constraint firstItem="4e7-am-V6D" firstAttribute="trailing" secondItem="xRV-qD-dFx" secondAttribute="trailing" constant="28" id="wEE-dK-93D"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="CMc-rY-Yhv"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -182,25 +202,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IOs-jR-K8j">
-                                <rect key="frame" x="16" y="59" width="260" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="IOs-jR-K8j">
+                                <rect key="frame" x="14" y="73" width="363" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <outlet property="delegate" destination="bcP-3D-KmU" id="Bb3-Ip-6Xj"/>
                                 </connections>
                             </searchBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTN-ZQ-Y9v">
-                                <rect key="frame" x="287" y="64" width="92" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Cancelar"/>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Jxt-8S-j25"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="IOs-jR-K8j" firstAttribute="trailing" secondItem="An2-ZT-j7C" secondAttribute="trailingMargin" id="K9o-kT-Xfv"/>
+                            <constraint firstItem="IOs-jR-K8j" firstAttribute="leading" secondItem="Jxt-8S-j25" secondAttribute="leading" constant="14" id="MVH-D3-cnc"/>
+                            <constraint firstItem="IOs-jR-K8j" firstAttribute="top" secondItem="Jxt-8S-j25" secondAttribute="top" constant="14" id="zDY-fw-UL9"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Paises" id="YQO-ei-IXr"/>
+                    <tabBarItem key="tabBarItem" title="Paises" image="globe.americas.fill" catalog="system" selectedImage="globe.americas.fill" springLoaded="YES" id="YQO-ei-IXr"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pOK-mc-zMR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -304,6 +322,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="clock.fill" catalog="system" width="128" height="123"/>
+        <image name="globe.americas.fill" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
