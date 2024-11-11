@@ -8,7 +8,7 @@
 import UIKit
 import Foundation
 
-//Este modelo sirve para definir las propiedades para describir los países en sus detalles
+
 class DetallePaisController: UIViewController{
     let url_de_paises = "https://maps.googleapis.com/maps/api/timezone/json"
     var lista_de_paises: [Paises] = []

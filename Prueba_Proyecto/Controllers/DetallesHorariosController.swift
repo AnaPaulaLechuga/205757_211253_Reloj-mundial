@@ -7,11 +7,20 @@
 
 import UIKit
 
-import Foundation
 import UIKit
  
 class DetallesHorariosController{
-    let url_de_horarios = "https://maps.googleapis.com/maps/api/timezone/json"
+  
     var lista_de_horarios: [Horarios] = []
     
+    
+    @IBOutlet weak var ubicacion_actual: UILabel!
+    
+    @IBOutlet weak var fecha_ubicacion_actual: UILabel!
+    
+    @IBOutlet weak var zona_horario_ubicacion: UILabel!
+    
+    @IBOutlet weak var diferencia_ubicacion: UILabel!
+    
+    @IBOutlet weak var hora_ubicacion_actual: UILabel!
 }
