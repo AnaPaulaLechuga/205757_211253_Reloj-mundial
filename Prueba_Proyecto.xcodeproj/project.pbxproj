@@ -17,9 +17,11 @@
 		FB5DA5A42CDD21E300E1E494 /* Prueba_ProyectoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5DA5A32CDD21E300E1E494 /* Prueba_ProyectoUITests.swift */; };
 		FB5DA5A62CDD21E300E1E494 /* Prueba_ProyectoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5DA5A52CDD21E300E1E494 /* Prueba_ProyectoUITestsLaunchTests.swift */; };
 		FB5DA5B42CDD2F9300E1E494 /* Lista_Paises_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5DA5B32CDD2F9300E1E494 /* Lista_Paises_Controller.swift */; };
-		FB5DA5B62CDD30E000E1E494 /* detalle_pais_controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5DA5B52CDD30E000E1E494 /* detalle_pais_controller.swift */; };
+		FB5DA5B62CDD30E000E1E494 /* DetallePaisController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5DA5B52CDD30E000E1E494 /* DetallePaisController.swift */; };
 		FB5DA5B82CDD312900E1E494 /* Lista_Horarios.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5DA5B72CDD312900E1E494 /* Lista_Horarios.swift */; };
-		FB5DA5BA2CDD316F00E1E494 /* DetallesHorarios.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5DA5B92CDD316F00E1E494 /* DetallesHorarios.swift */; };
+		FB5DA5BA2CDD316F00E1E494 /* DetallesHorariosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5DA5B92CDD316F00E1E494 /* DetallesHorariosController.swift */; };
+		FB9819372CDECE3300D328BB /* Horarios.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9819362CDECE3300D328BB /* Horarios.swift */; };
+		FB9819392CDECE4000D328BB /* Paises.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9819382CDECE4000D328BB /* Paises.swift */; };
 		FBCA96CE2CDE77FB001BF9B5 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCA96CD2CDE77FB001BF9B5 /* NavigationController.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,9 +57,11 @@
 		FB5DA5A32CDD21E300E1E494 /* Prueba_ProyectoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prueba_ProyectoUITests.swift; sourceTree = "<group>"; };
 		FB5DA5A52CDD21E300E1E494 /* Prueba_ProyectoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prueba_ProyectoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FB5DA5B32CDD2F9300E1E494 /* Lista_Paises_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lista_Paises_Controller.swift; sourceTree = "<group>"; };
-		FB5DA5B52CDD30E000E1E494 /* detalle_pais_controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detalle_pais_controller.swift; sourceTree = "<group>"; };
+		FB5DA5B52CDD30E000E1E494 /* DetallePaisController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallePaisController.swift; sourceTree = "<group>"; };
 		FB5DA5B72CDD312900E1E494 /* Lista_Horarios.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lista_Horarios.swift; sourceTree = "<group>"; };
-		FB5DA5B92CDD316F00E1E494 /* DetallesHorarios.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallesHorarios.swift; sourceTree = "<group>"; };
+		FB5DA5B92CDD316F00E1E494 /* DetallesHorariosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallesHorariosController.swift; sourceTree = "<group>"; };
+		FB9819362CDECE3300D328BB /* Horarios.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Horarios.swift; sourceTree = "<group>"; };
+		FB9819382CDECE4000D328BB /* Paises.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paises.swift; sourceTree = "<group>"; };
 		FBCA96CD2CDE77FB001BF9B5 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,6 +93,7 @@
 		FB5DA5762CDD21E200E1E494 = {
 			isa = PBXGroup;
 			children = (
+				FB9819352CDECE2000D328BB /* Modelos */,
 				FB5DA5812CDD21E200E1E494 /* Prueba_Proyecto */,
 				FB5DA5982CDD21E300E1E494 /* Prueba_ProyectoTests */,
 				FB5DA5A22CDD21E300E1E494 /* Prueba_ProyectoUITests */,
@@ -142,12 +147,21 @@
 			children = (
 				FB5DA5862CDD21E200E1E494 /* ViewController.swift */,
 				FB5DA5B32CDD2F9300E1E494 /* Lista_Paises_Controller.swift */,
-				FB5DA5B52CDD30E000E1E494 /* detalle_pais_controller.swift */,
+				FB5DA5B52CDD30E000E1E494 /* DetallePaisController.swift */,
 				FB5DA5B72CDD312900E1E494 /* Lista_Horarios.swift */,
-				FB5DA5B92CDD316F00E1E494 /* DetallesHorarios.swift */,
+				FB5DA5B92CDD316F00E1E494 /* DetallesHorariosController.swift */,
 				FBCA96CD2CDE77FB001BF9B5 /* NavigationController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FB9819352CDECE2000D328BB /* Modelos */ = {
+			isa = PBXGroup;
+			children = (
+				FB9819362CDECE3300D328BB /* Horarios.swift */,
+				FB9819382CDECE4000D328BB /* Paises.swift */,
+			);
+			path = Modelos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,13 +295,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB5DA5BA2CDD316F00E1E494 /* DetallesHorarios.swift in Sources */,
+				FB5DA5BA2CDD316F00E1E494 /* DetallesHorariosController.swift in Sources */,
 				FBCA96CE2CDE77FB001BF9B5 /* NavigationController.swift in Sources */,
 				FB5DA5B82CDD312900E1E494 /* Lista_Horarios.swift in Sources */,
 				FB5DA5B42CDD2F9300E1E494 /* Lista_Paises_Controller.swift in Sources */,
-				FB5DA5B62CDD30E000E1E494 /* detalle_pais_controller.swift in Sources */,
+				FB9819372CDECE3300D328BB /* Horarios.swift in Sources */,
+				FB5DA5B62CDD30E000E1E494 /* DetallePaisController.swift in Sources */,
 				FB5DA5872CDD21E200E1E494 /* ViewController.swift in Sources */,
 				FB5DA5832CDD21E200E1E494 /* AppDelegate.swift in Sources */,
+				FB9819392CDECE4000D328BB /* Paises.swift in Sources */,
 				FB5DA5852CDD21E200E1E494 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -466,6 +482,7 @@
 		FB5DA5AA2CDD21E300E1E494 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -477,6 +494,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -484,6 +502,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "mx.uacj.bocetos-4.Prueba-Proyecto";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -493,6 +513,7 @@
 		FB5DA5AB2CDD21E300E1E494 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -504,6 +525,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -511,6 +533,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "mx.uacj.bocetos-4.Prueba-Proyecto";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
