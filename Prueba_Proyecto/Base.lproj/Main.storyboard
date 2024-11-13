@@ -209,10 +209,17 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="diferencia_pais" destination="IRJ-rb-b02" id="Rwd-1S-9hZ"/>
                         <outlet property="diferencia_ubicacion" destination="du6-fV-0eb" id="4nK-LJ-AbH"/>
+                        <outlet property="fecha_pais" destination="NmZ-tu-Uzu" id="8Bn-HI-CJN"/>
                         <outlet property="fecha_ubicacion_actual" destination="2E9-ga-vCj" id="UWK-Jc-m1Z"/>
+                        <outlet property="hora_pais" destination="xhc-NL-r0d" id="b6v-UL-lG2"/>
                         <outlet property="hora_ubicacion_actual" destination="7Zb-d3-obo" id="CZ9-ng-cDe"/>
+                        <outlet property="imagen_pais" destination="0Ts-M1-nIR" id="9Ll-eV-ZuV"/>
+                        <outlet property="imagen_ubicacion_actual" destination="Gft-24-tHS" id="Dhw-Yh-HKr"/>
+                        <outlet property="nombre_pais" destination="Yix-8D-kdM" id="S7z-Ij-AfS"/>
                         <outlet property="ubicacion_actual" destination="oZo-Dr-bph" id="9jS-aF-51M"/>
+                        <outlet property="zona_horario_pais" destination="FBC-EE-lR4" id="jLm-c2-90z"/>
                         <outlet property="zona_horario_ubicacion" destination="WN8-ol-HSC" id="kjm-Zx-JIj"/>
                     </connections>
                 </viewController>

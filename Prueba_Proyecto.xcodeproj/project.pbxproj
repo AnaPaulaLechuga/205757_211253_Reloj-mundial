@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB1D441E2CE50DED001DF097 /* PubHorarios.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1D441D2CE50DED001DF097 /* PubHorarios.swift */; };
 		FB5DA5832CDD21E200E1E494 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5DA5822CDD21E200E1E494 /* AppDelegate.swift */; };
 		FB5DA5852CDD21E200E1E494 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5DA5842CDD21E200E1E494 /* SceneDelegate.swift */; };
 		FB5DA5872CDD21E200E1E494 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5DA5862CDD21E200E1E494 /* ViewController.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB1D441D2CE50DED001DF097 /* PubHorarios.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PubHorarios.swift; sourceTree = "<group>"; };
 		FB5DA57F2CDD21E200E1E494 /* Prueba_Proyecto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prueba_Proyecto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB5DA5822CDD21E200E1E494 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB5DA5842CDD21E200E1E494 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,9 +92,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB1D441C2CE50DD5001DF097 /* Publicaciones */ = {
+			isa = PBXGroup;
+			children = (
+				FB1D441D2CE50DED001DF097 /* PubHorarios.swift */,
+			);
+			path = Publicaciones;
+			sourceTree = "<group>";
+		};
 		FB5DA5762CDD21E200E1E494 = {
 			isa = PBXGroup;
 			children = (
+				FB1D441C2CE50DD5001DF097 /* Publicaciones */,
 				FB9819352CDECE2000D328BB /* Modelos */,
 				FB5DA5812CDD21E200E1E494 /* Prueba_Proyecto */,
 				FB5DA5982CDD21E300E1E494 /* Prueba_ProyectoTests */,
@@ -302,6 +313,7 @@
 				FB9819372CDECE3300D328BB /* Horarios.swift in Sources */,
 				FB5DA5B62CDD30E000E1E494 /* DetallePaisController.swift in Sources */,
 				FB5DA5872CDD21E200E1E494 /* ViewController.swift in Sources */,
+				FB1D441E2CE50DED001DF097 /* PubHorarios.swift in Sources */,
 				FB5DA5832CDD21E200E1E494 /* AppDelegate.swift in Sources */,
 				FB9819392CDECE4000D328BB /* Paises.swift in Sources */,
 				FB5DA5852CDD21E200E1E494 /* SceneDelegate.swift in Sources */,
