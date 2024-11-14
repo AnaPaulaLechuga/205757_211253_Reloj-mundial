@@ -123,12 +123,6 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Cambiar"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="D. Hora" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="du6-fV-0eb">
-                                <rect key="frame" x="146" y="399" width="57" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre del país" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yix-8D-kdM">
                                 <rect key="frame" x="42" y="463" width="125" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -184,7 +178,6 @@
                             <constraint firstItem="IRJ-rb-b02" firstAttribute="top" secondItem="0Ts-M1-nIR" secondAttribute="bottom" constant="63" id="GNb-vh-1ur"/>
                             <constraint firstItem="xhc-NL-r0d" firstAttribute="baseline" secondItem="NmZ-tu-Uzu" secondAttribute="baseline" id="KWg-A4-KRV"/>
                             <constraint firstItem="ibf-8V-9UZ" firstAttribute="top" secondItem="xhc-NL-r0d" secondAttribute="bottom" constant="19" id="Ojh-CD-V2c"/>
-                            <constraint firstItem="du6-fV-0eb" firstAttribute="leading" secondItem="WN8-ol-HSC" secondAttribute="trailing" constant="36" id="PIi-Qw-VED"/>
                             <constraint firstItem="Ebb-9M-JuQ" firstAttribute="bottom" secondItem="Gft-24-tHS" secondAttribute="bottom" constant="483" id="QMy-Mu-VPm"/>
                             <constraint firstItem="FBC-EE-lR4" firstAttribute="leading" secondItem="Ebb-9M-JuQ" secondAttribute="leading" constant="50" id="Qlx-WL-CEk"/>
                             <constraint firstItem="2E9-ga-vCj" firstAttribute="top" secondItem="Gft-24-tHS" secondAttribute="bottom" constant="24" id="R4H-Re-Imk"/>
@@ -201,7 +194,6 @@
                             <constraint firstItem="2E9-ga-vCj" firstAttribute="leading" secondItem="Ebb-9M-JuQ" secondAttribute="leading" constant="50" id="i7J-df-ZXA"/>
                             <constraint firstItem="IRJ-rb-b02" firstAttribute="leading" secondItem="FBC-EE-lR4" secondAttribute="trailing" constant="54" id="ixn-uT-2cn"/>
                             <constraint firstItem="0Ts-M1-nIR" firstAttribute="top" secondItem="Yix-8D-kdM" secondAttribute="bottom" constant="15" id="mpl-q4-enW"/>
-                            <constraint firstItem="du6-fV-0eb" firstAttribute="top" secondItem="Gft-24-tHS" secondAttribute="bottom" constant="64" id="tTp-rK-gFk"/>
                             <constraint firstItem="oZo-Dr-bph" firstAttribute="leading" secondItem="Ebb-9M-JuQ" secondAttribute="leading" constant="50" id="uKL-dh-LVB"/>
                             <constraint firstItem="Gft-24-tHS" firstAttribute="trailing" secondItem="xhc-NL-r0d" secondAttribute="trailing" id="xnk-jV-lW3"/>
                             <constraint firstItem="Ebb-9M-JuQ" firstAttribute="trailing" secondItem="7Zb-d3-obo" secondAttribute="trailing" constant="50" id="yV0-Fk-UMa"/>
@@ -210,7 +202,6 @@
                     </view>
                     <connections>
                         <outlet property="diferencia_pais" destination="IRJ-rb-b02" id="Rwd-1S-9hZ"/>
-                        <outlet property="diferencia_ubicacion" destination="du6-fV-0eb" id="4nK-LJ-AbH"/>
                         <outlet property="fecha_pais" destination="NmZ-tu-Uzu" id="8Bn-HI-CJN"/>
                         <outlet property="fecha_ubicacion_actual" destination="2E9-ga-vCj" id="UWK-Jc-m1Z"/>
                         <outlet property="hora_pais" destination="xhc-NL-r0d" id="b6v-UL-lG2"/>
