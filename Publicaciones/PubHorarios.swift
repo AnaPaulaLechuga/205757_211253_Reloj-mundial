@@ -18,22 +18,22 @@ class PubHorarios {
         URLSession.shared.dataTask(with: ubicacion){
             (datos, respuesta, error) in do{
                 if let publicaciones_recibidas = datos{
-                    let prueba_de_interpretación_de_datos = try JSONDecoder().decode([Horarios].self, from: publicaciones_recibidas)
+                    //let prueba_de_interpretación_de_datos = try JSONDecoder().decode([Horarios].self, from: publicaciones_recibidas)
                     
-                    self.lista_paises = prueba_de_interpretación_de_datos
-                    al_recibir(prueba_de_interpretación_de_datos)
+                    //self.lista_paises = prueba_de_interpretación_de_datos
+                    //al_recibir(prueba_de_interpretación_de_datos)
                 }
                 else{
                     print(respuesta!)
                 }
             } catch{
-                    print("Error")
+                print("Error")
             }}.resume()
-        }
-    
-    func obtener_publicaciones(id: Int, al_recibir: @escaping ([HorariosActual]) -> Void){
+    }
+}
+    /*func obtener_publicaciones(id: Int, al_recibir: @escaping ([HorariosActual]) -> Void){
         let ubicacion = URL(string: "\(url)horarios/\(id)")!
-        //Petición HTTP
+        Petición HTTP
         URLSession.shared.dataTask(with: ubicacion){
             (datos, respuesta, error) in do{
                 if let publicaciones_recibidas = datos{
@@ -47,8 +47,8 @@ class PubHorarios {
                 }
             } catch{
                     print("Error")
-            }}.resume()
+            //}}.resume()
         }
 }
 
-
+*/

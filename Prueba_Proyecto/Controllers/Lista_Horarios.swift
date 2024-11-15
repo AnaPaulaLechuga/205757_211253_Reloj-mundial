@@ -16,6 +16,8 @@ class HorariosController: UIViewController{
     
     //Esta función es pars permitir que de ls pantalla principal de horarios pase a la de detalles de horario cuando pulsemos la vista.}
     
+    
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
 
            //Confirmación de que se ha seleccionado la celda de la vista correctamente para pasar a la página de detalles horario
