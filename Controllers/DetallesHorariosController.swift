@@ -17,7 +17,7 @@ class DetallesHorariosController:UIViewController/*, UICollectionViewDataSource*
     }
     */
     
-    private var horario: HorariosActual?
+    private var horario: HorariosPais?
     
     //Detalles de horario de ubicacion actual
     @IBOutlet weak var ubicacion_actual: UILabel!
@@ -36,7 +36,7 @@ class DetallesHorariosController:UIViewController/*, UICollectionViewDataSource*
     
     public var id_horario: Int?
     
-    private var lista_de_horarios: [HorariosActual] = []
+    private var lista_de_horarios: [HorariosPais] = []
     
     //Para que funcione la navegacion hacia esta pantalla cuando demos clic a una vista
     override func viewDidLoad() {
@@ -64,11 +64,11 @@ class DetallesHorariosController:UIViewController/*, UICollectionViewDataSource*
             guard let horario_actual = self.horario else{
                 return
             }
-            ubicacion_actual.text = horario_actual.actual_name
+            ubicacion_actual.text = horario_actual.country_name
             //imagen_ubicacion_actual. = horario_actual.actual_flag
-            fecha_ubicacion_actual.text = horario_actual.actual_date
-            zona_horario_pais.text = horario_actual.actual_hour_zone
-            hora_ubicacion_actual.text = horario_actual.actual_hour
+            fecha_ubicacion_actual.text = horario_actual.country_date
+            zona_horario_pais.text = horario_actual.country_hour_zone
+            hora_ubicacion_actual.text = horario_actual.hour
             
         }
         

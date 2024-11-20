@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FB1D441E2CE50DED001DF097 /* PubHorarios.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1D441D2CE50DED001DF097 /* PubHorarios.swift */; };
+		FB1D441E2CE50DED001DF097 /* ApiDeDatos.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1D441D2CE50DED001DF097 /* ApiDeDatos.swift */; };
 		FB5CBEFF2CE6BC24004CE4F7 /* HorariosPais.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5CBEFE2CE6BC24004CE4F7 /* HorariosPais.swift */; };
 		FB5DA5832CDD21E200E1E494 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5DA5822CDD21E200E1E494 /* AppDelegate.swift */; };
 		FB5DA5852CDD21E200E1E494 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5DA5842CDD21E200E1E494 /* SceneDelegate.swift */; };
@@ -23,7 +23,6 @@
 		FB5DA5B82CDD312900E1E494 /* Lista_Horarios.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5DA5B72CDD312900E1E494 /* Lista_Horarios.swift */; };
 		FB5DA5BA2CDD316F00E1E494 /* DetallesHorariosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5DA5B92CDD316F00E1E494 /* DetallesHorariosController.swift */; };
 		FB7A9B732CE7B53300AF71A7 /* VistaDeHorarios.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7A9B722CE7B53300AF71A7 /* VistaDeHorarios.swift */; };
-		FB9819372CDECE3300D328BB /* HorariosActual.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9819362CDECE3300D328BB /* HorariosActual.swift */; };
 		FB9819392CDECE4000D328BB /* Paises.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9819382CDECE4000D328BB /* Paises.swift */; };
 		FBCA96CE2CDE77FB001BF9B5 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCA96CD2CDE77FB001BF9B5 /* NavigationController.swift */; };
 /* End PBXBuildFile section */
@@ -46,7 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FB1D441D2CE50DED001DF097 /* PubHorarios.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PubHorarios.swift; sourceTree = "<group>"; };
+		FB1D441D2CE50DED001DF097 /* ApiDeDatos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiDeDatos.swift; sourceTree = "<group>"; };
 		FB5CBEFE2CE6BC24004CE4F7 /* HorariosPais.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorariosPais.swift; sourceTree = "<group>"; };
 		FB5DA57F2CDD21E200E1E494 /* Prueba_Proyecto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prueba_Proyecto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB5DA5822CDD21E200E1E494 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -66,7 +65,6 @@
 		FB5DA5B72CDD312900E1E494 /* Lista_Horarios.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lista_Horarios.swift; sourceTree = "<group>"; };
 		FB5DA5B92CDD316F00E1E494 /* DetallesHorariosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallesHorariosController.swift; sourceTree = "<group>"; };
 		FB7A9B722CE7B53300AF71A7 /* VistaDeHorarios.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VistaDeHorarios.swift; sourceTree = "<group>"; };
-		FB9819362CDECE3300D328BB /* HorariosActual.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorariosActual.swift; sourceTree = "<group>"; };
 		FB9819382CDECE4000D328BB /* Paises.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paises.swift; sourceTree = "<group>"; };
 		FBCA96CD2CDE77FB001BF9B5 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,19 +94,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FB1D441C2CE50DD5001DF097 /* Publicaciones */ = {
+		FB1D441C2CE50DD5001DF097 /* Apis */ = {
 			isa = PBXGroup;
 			children = (
-				FB1D441D2CE50DED001DF097 /* PubHorarios.swift */,
+				FB1D441D2CE50DED001DF097 /* ApiDeDatos.swift */,
 			);
-			path = Publicaciones;
+			path = Apis;
 			sourceTree = "<group>";
 		};
 		FB5DA5762CDD21E200E1E494 = {
 			isa = PBXGroup;
 			children = (
-				FB1D441C2CE50DD5001DF097 /* Publicaciones */,
+				FB5DA5B22CDD2F4000E1E494 /* Controllers */,
 				FB9819352CDECE2000D328BB /* Modelos */,
+				FB7A9B712CE7B38500AF71A7 /* Vista */,
 				FB5DA5812CDD21E200E1E494 /* Prueba_Proyecto */,
 				FB5DA5982CDD21E300E1E494 /* Prueba_ProyectoTests */,
 				FB5DA5A22CDD21E300E1E494 /* Prueba_ProyectoUITests */,
@@ -130,7 +129,6 @@
 			isa = PBXGroup;
 			children = (
 				FB5DA5822CDD21E200E1E494 /* AppDelegate.swift */,
-				FB5DA5B22CDD2F4000E1E494 /* Controllers */,
 				FB5DA5842CDD21E200E1E494 /* SceneDelegate.swift */,
 				FB5DA5882CDD21E200E1E494 /* Main.storyboard */,
 				FB5DA58B2CDD21E300E1E494 /* Assets.xcassets */,
@@ -160,7 +158,7 @@
 		FB5DA5B22CDD2F4000E1E494 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				FB7A9B712CE7B38500AF71A7 /* VistaDeCeldas */,
+				FB1D441C2CE50DD5001DF097 /* Apis */,
 				FB5DA5862CDD21E200E1E494 /* ViewController.swift */,
 				FB5DA5B32CDD2F9300E1E494 /* Lista_Paises_Controller.swift */,
 				FB5DA5B52CDD30E000E1E494 /* DetallePaisController.swift */,
@@ -171,18 +169,17 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		FB7A9B712CE7B38500AF71A7 /* VistaDeCeldas */ = {
+		FB7A9B712CE7B38500AF71A7 /* Vista */ = {
 			isa = PBXGroup;
 			children = (
 				FB7A9B722CE7B53300AF71A7 /* VistaDeHorarios.swift */,
 			);
-			path = VistaDeCeldas;
+			path = Vista;
 			sourceTree = "<group>";
 		};
 		FB9819352CDECE2000D328BB /* Modelos */ = {
 			isa = PBXGroup;
 			children = (
-				FB9819362CDECE3300D328BB /* HorariosActual.swift */,
 				FB9819382CDECE4000D328BB /* Paises.swift */,
 				FB5CBEFE2CE6BC24004CE4F7 /* HorariosPais.swift */,
 			);
@@ -325,10 +322,9 @@
 				FB5DA5B82CDD312900E1E494 /* Lista_Horarios.swift in Sources */,
 				FB7A9B732CE7B53300AF71A7 /* VistaDeHorarios.swift in Sources */,
 				FB5DA5B42CDD2F9300E1E494 /* Lista_Paises_Controller.swift in Sources */,
-				FB9819372CDECE3300D328BB /* HorariosActual.swift in Sources */,
 				FB5DA5B62CDD30E000E1E494 /* DetallePaisController.swift in Sources */,
 				FB5DA5872CDD21E200E1E494 /* ViewController.swift in Sources */,
-				FB1D441E2CE50DED001DF097 /* PubHorarios.swift in Sources */,
+				FB1D441E2CE50DED001DF097 /* ApiDeDatos.swift in Sources */,
 				FB5DA5832CDD21E200E1E494 /* AppDelegate.swift in Sources */,
 				FB5CBEFF2CE6BC24004CE4F7 /* HorariosPais.swift in Sources */,
 				FB9819392CDECE4000D328BB /* Paises.swift in Sources */,

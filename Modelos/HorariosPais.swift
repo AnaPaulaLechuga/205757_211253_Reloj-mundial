@@ -12,6 +12,7 @@ class HorariosPais: Codable{
     var country_date: String
     var country_flag: String
     var country_hour_zone: String
-    var c_difference: String
-    var actual_hour: String
+    var hour: String
+    var difference_hour: String
+    
 }
